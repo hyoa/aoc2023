@@ -1,0 +1,22 @@
+package day
+
+func init() {
+	DayCollection["X"] = DayX
+}
+
+type dayX struct {
+}
+
+func DayX(input1, input2 string) (any, any) {
+	d := dayX{}
+
+	return d.step1(), d.step2()
+}
+
+func (d dayX) step1() any {
+	return 0
+}
+
+func (d dayX) step2() any {
+	return 0
+}
