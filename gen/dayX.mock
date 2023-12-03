@@ -1,14 +1,21 @@
 package day
 
+import (
+	"hyoa/aoc2023/internal/utils"
+)
+
 func init() {
 	DayCollection["X"] = DayX
 }
 
 type dayX struct {
+	linesInput1 []string
 }
 
 func DayX(input1, input2 string) (any, any) {
-	d := dayX{}
+	d := dayX{
+		linesInput1: utils.ReadTextFileLinesAsString(input1),
+	}
 
 	return d.step1(), d.step2()
 }
