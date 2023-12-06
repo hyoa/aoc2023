@@ -2,7 +2,6 @@ package utils
 
 import (
 	"bufio"
-	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -54,7 +53,6 @@ func ReadTextFileLinesAsInt(path string) []int {
 }
 
 func ReadTextFile(path string) string {
-	fmt.Println(path)
 	content, err := os.ReadFile(path)
 
 	if err != nil {
